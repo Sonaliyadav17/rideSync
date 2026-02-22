@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RideSync | Smart Social Carpool</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+  <div class="logo">RideSync</div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#features">Features</a>
+    <a href="#demo">Live Demo</a>
+    <a href="#impact">Impact</a>
+  </nav>
+  <button id="themeToggle">🌙</button>
+</header>
+
+<section id="home" class="hero">
+  <div class="hero-container">
+    
+    <div class="hero-text">
+      <h1>Smart Mobility Meets <span>Human Connection</span></h1>
+      <h4>
+        Interest-based carpooling that reduces traffic, saves money,
+        and improves mental well-being.
+      </h4>
+    
+     <a href="#demo" class="primary-btn">Try Live Demo</a>                       
+      
+    </div>
+
+    <div class="hero-image">
+      <img src="assests/car.png" alt="Car Image">
+    </div>
+
+  </div>
+</section>
+
+<section id="features" class="section">
+  <h2>Why RideSync?</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>🎯 Interest Matching</h3>
+      <p>Match by music, hobbies, and conversation style to reduce awkward rides.</p>
+    </div>
+    <div class="card">
+      <h3>🛡 Female-Only Mode</h3>
+      <p>Optional secure mode for safer commuting experience.</p>
+    </div>
+    <div class="card">
+      <h3>⭐ Transparent Ratings</h3>
+      <p>Verified identities and ride history build trust.</p>
+    </div>
+    <div class="card">
+      <h3>🧠 Mental Well-being</h3>
+      <p>Encourages communication and reduces stress during commute.</p>
+    </div>
+  </div>
+</section>
+
+<section id="demo" class="section">
+  <h2>Live Matching Demo</h2>
+
+
+  <div class="form-box">
+    <input type="text" id="name" placeholder="Your Name">
+
+    <input type="text" id="from" placeholder="Starting Location">
+    <input type="text" id="to" placeholder="Destination">
+
+    <select id="interest">
+      <option value="">Select Interest</option>
+      <option>Music</option>
+      <option>Tech</option>
+      <option>Sports</option>
+      <option>Books</option>
+    </select>
+
+    <label class="checkbox">
+  <input type="checkbox" id="femaleMode">
+  <span>Female Only Mode</span>
+</label>
+    
+    <div>
+    <button onclick="addUser()">Join Pool</button>
+    </div>
+  </div>
+
+  <div id="result"></div>
+</section>
+
+  <div id="result"></div>
+</section>
+
+<section id="impact" class="section">
+  <h2>Real Impact</h2>
+  <div class="stats">
+    <div class="stat">
+      <h3 class="counter" data-target="60">0</h3>
+      <p>Vehicles Reduced Daily</p>
+    </div>
+    <div class="stat">
+      <h3 class="counter" data-target="50">0</h3>
+      <p>% Cost Savings</p>
+    </div>
+    <div class="stat">
+      <h3 class="counter" data-target="45">0</h3>
+      <p>% CO₂ Reduction</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2026 RideSync | Smart Social Carpool
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
